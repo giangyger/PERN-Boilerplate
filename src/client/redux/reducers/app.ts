@@ -1,8 +1,17 @@
-interface AppState {}
+import * as appActionCreators from "../actionCreators/app";
 
-const initialState: AppState = {};
+interface AppState {
+  welcome: string;
+}
+const initialState: AppState = {
+  welcome: "Welcome, this is the PERN Boilerplate",
+};
 
-const appReducer = (state: AppState = initialState, actions: any) => {
+const appReducer = (state: AppState = initialState, action: any) => {
+  switch (action.type) {
+    case appActionCreators.CREATE_APP:
+      return state;
+  }
   return state;
 };
 

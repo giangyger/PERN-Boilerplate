@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom";
 import Navigation from "./navigation";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import "./assets/css/index.css";
 
 const RootComponent: React.FC = () => {
   return (

@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/client/index.tsx",
-  mode: process.env.NODE_ENV === "production" ? "production" : "development",
   output: {
     path: __dirname + "/public",
     filename: "build/[name].[contenthash].js",
@@ -20,6 +19,14 @@ module.exports = {
         options: {
           configFile: "tsconfig.webpack.json",
         },
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },

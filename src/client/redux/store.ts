@@ -3,6 +3,8 @@ import { all, fork } from "redux-saga/effects";
 import appReducer from "./reducers/app";
 import createSagaMiddleware from "redux-saga";
 
+import appSaga from "./sagas/app";
+
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
@@ -11,7 +13,7 @@ const store = createStore(
 );
 
 const rootSaga = function* () {
-  yield all([]);
+  yield all([...appSaga]);
 };
 
 sagaMiddleware.run(rootSaga);
