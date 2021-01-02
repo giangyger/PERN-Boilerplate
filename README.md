@@ -36,6 +36,7 @@ src
 * Redux
 * Redux Saga
 * Sequelize (with postgres)
+* Typescript
 
 ## Scripts
 **clean** - clean and reinstall npm packages  
