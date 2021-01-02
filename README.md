@@ -36,6 +36,7 @@ src
 * Redux
 * Redux Saga
 * Sequelize (with postgres)
+* Styled Components
 * Typescript
 
 ## Scripts
