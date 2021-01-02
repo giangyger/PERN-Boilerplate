@@ -1,0 +1,16 @@
+{
+  "include": ["src"],
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["DOM", "ES6"],
+    "jsx": "react",
+    "sourceMap": true,
+    "removeComments": true,
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
