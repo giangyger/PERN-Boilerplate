@@ -1,8 +1,8 @@
 import express from "express";
 import helmet from "helmet";
 import dotenv from "dotenv";
-import "./db";
 dotenv.config();
+import "./db";
 
 const app = express();
 app.use(helmet());
